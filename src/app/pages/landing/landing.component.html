@@ -1,0 +1,29 @@
+<!-- Landing Page Container -->
+<div class="max-w-4xl mx-auto p-6">
+  <div *ngIf="error" class="bg-red-500 text-white p-3 rounded mb-4">
+      {{ error }}
+  </div>
+  <div *ngIf="success" class="bg-green-500 text-white p-3 rounded mb-4">
+      {{ success }}
+  </div>
+</div>
+
+<!-- Landing Header -->
+<div id="landing-header" class="text-center py-12">
+  <h1 class="text-4xl font-bold text-gray-900">Welcome to YelpCamp!</h1>
+  <a routerLink="/campgrounds" class="mt-4 inline-block bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition">
+      View All Campgrounds
+  </a>
+</div>
+
+<!-- Slideshow Background -->
+<ul class="slideshow">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+<!-- Footer Component -->
+<app-footer></app-footer>

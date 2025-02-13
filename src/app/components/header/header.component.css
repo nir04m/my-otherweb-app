@@ -1,0 +1,52 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 12px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: block;
+    margin: 8px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: #007bff;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 0 10px;
+    }
+
+    ul.hidden {
+        display: none;
+    }
+}
