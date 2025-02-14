@@ -1,1 +1,24 @@
-<p>show works!</p>
+<div *ngIf="campground as camp" class="container mx-auto p-6">
+    <div class="grid md:grid-cols-4 gap-4">
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-xl font-bold">YelpCamp</p>
+            <ul class="list-none">
+                <li class="bg-blue-500 text-white p-2 rounded mb-2">Info 1</li>
+                <li class="bg-gray-200 p-2 rounded mb-2">Info 2</li>
+                <li class="bg-gray-200 p-2 rounded">Info 3</li>
+            </ul>
+        </div>
+
+        <div class="md:col-span-3">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img [src]="camp.image" alt="Campground Image" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold text-gray-900">{{ camp.name }}</h4>
+                    <h4 class="text-lg text-gray-700">$ {{ camp.price }}/night</h4>
+                    <p class="text-gray-600">{{ camp.description }}</p>
+                    <p class="text-gray-500 italic">Submitted by {{ camp.author.username }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
