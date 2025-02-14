@@ -16,27 +16,27 @@ interface Campground {
 })
 export class CampgroundsComponent {
 // Sample campground data (Replace with API call)
-campgrounds: WritableSignal<Campground[]> = signal<Campground[]>([
-  { name: 'Sunny Hill', image: '/assets/camp1.jpg' },
-  { name: 'Forest Retreat', image: '/assets/camp2.jpg' },
-  { name: 'Lakeview Camp', image: '/assets/camp3.jpg' },
-  { name: 'Mountain Peak', image: '/assets/camp4.jpg' }
-]);
+  campgrounds: WritableSignal<Campground[]> = signal<Campground[]>([
+  { name: 'Sunny Hill', image: 'assets/campground1.jpg' },
+  { name: 'Forest Retreat', image: 'assets/campground2.jpg' },
+  { name: 'Lakeview Camp', image: 'assets/campground3.jpg' },
+  { name: 'Mountain Peak', image: 'assets/campground4.jpg' }
+  ]);
 
-constructor() {
-  this.loadCampgrounds();
-}
+  constructor() {
+    this.loadCampgrounds();
+  }
 
-loadCampgrounds() {
-  // Simulating fetching from an API
-  setTimeout(() => {
-    this.campgrounds.set([
-      { name: 'Sunny Hill', image: '/assets/camp1.jpg' },
-      { name: 'Forest Retreat', image: '/assets/camp2.jpg' },
-      { name: 'Lakeview Camp', image: '/assets/camp3.jpg' },
-      { name: 'Mountain Peak', image: '/assets/camp4.jpg' },
-      { name: 'Sunset Valley', image: '/assets/camp5.jpg' }
-    ]);
-  }, 1000);
-}
+  loadCampgrounds() {
+    // Simulating fetching from an API
+    setTimeout(() => {
+      this.campgrounds.set([
+        { name: 'Sunny Hill', image: '/assets/campground1.jpg' },
+        { name: 'Forest Retreat', image: '/assets/campground2.jpg' },
+        { name: 'Lakeview Camp', image: '/assets/campground3.jpg' },
+        { name: 'Mountain Peak', image: '/assets/campground4.jpg' },
+        { name: 'Sunset Valley', image: '/assets/campground5.jpg' }
+      ]);
+    }, 1000);
+  }
 }
