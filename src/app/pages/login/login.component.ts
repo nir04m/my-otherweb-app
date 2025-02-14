@@ -2,12 +2,11 @@ import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgIf} from '@angular/common';
-import { FooterComponent } from '../../components/footer/footer.component';
 
 
 @Component({
   selector: 'app-login',
-  imports: [NgIf, FormsModule, FooterComponent],
+  imports: [NgIf, FormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

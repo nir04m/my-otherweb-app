@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { RouterLink} from '@angular/router';
-import { FooterComponent } from '../../components/footer/footer.component';
+
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css'],
-  imports: [NgIf, RouterLink, FooterComponent]
+  imports: [NgIf, RouterLink]
 })
 export class LandingComponent {
   error: string | null = null;
